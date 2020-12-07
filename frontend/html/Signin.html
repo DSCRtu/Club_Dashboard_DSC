@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width"/>
+	<title>Responsive Side Navigation Bar</title>
+	<link rel="stylesheet" href="../css/navbar.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".hamburger").click(function(){
+			   $(".wrapper").toggleClass("collapse");
+			});
+		});
+	</script>
+    <link rel="stylesheet" href="../css/Signin.css">
+</head>
+<body>
+    
+<div class="wrapper">
+    <div class="top_navbar">
+      <div class="hamburger">
+         <div class="one"></div>
+         <div class="two"></div>
+         <div class="three"></div>
+      </div>
+      <div class="top_menu">
+        <div class="logo"><span>d</span>ash<span>b</span>oard.</div>
+        <ul>
+          <li><a href="#">
+            <i class="fab fa-instagram"></i></a></li>
+          <li><a href="#">
+            <i class="fab fa-twitter"></i>
+            </a></li>
+          <li><a href="#">
+            <i class="fab fa-github"></i>
+            </a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="sidebar">
+        <ul>
+          <li><a href="#">
+            <span class="icon"><i class="fas fa-home"></i></span>
+            <span class="title">Home</span></a></li>
+          <li><a href="#">
+            <span class="icon"><i class="fas fa-file-video"></i></span>
+            <span class="title">Movies</span>
+            </a></li>
+          <li><a href="#">
+            <span class="icon"><i class="fas fa-volleyball-ball"></i></span>
+            <span class="title">Sports</span>
+            </a></li>
+          <li><a href="#" class="active">
+            <span class="icon"><i class="fas fa-blog"></i></span>
+            <span class="title">Blogs</span>
+            </a></li>
+          <li><a href="#">
+            <span class="icon"><i class="fas fa-leaf"></i></span>
+            <span class="title">Nature</span>
+            </a></li>
+      </ul>
+    </div>
+    <div class="login">
+      <h3>SignIn</h3>
+        <input type="text" placeholder="Username" id="username">  
+      <input type="password" placeholder="password" id="password">  
+      <a href="#" class="forgot">forgot password?</a>
+      <input type="submit" value="Sign In">
+      <img src="../img/dsclogo.png" class="dsclogo">
+    </div>
+    
+    
+
+
+    
+  </div>
+  <img src="../img/webDesignDSC.png" class="image">
+  <img src="../img/WelcomeBack.png" class="back">
+</body>
+</html>
