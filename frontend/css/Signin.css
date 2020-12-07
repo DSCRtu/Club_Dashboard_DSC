@@ -1,0 +1,176 @@
+
+.login {
+  background:#FDFEFF;;
+  
+  border-radius: 12px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  height: 257px;
+  margin: 20px auto 0;
+  width: 298px;
+}
+input[type="password"], input[type="text"] {
+  background:#F1F0FF;
+  border-radius: 6px;
+  border: 1px solid #6A5FDE;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  color:#6A5FDE;
+  height: 39px;
+  margin: 31px 0 0 29px;
+  padding-left: 37px;
+  width: 240px;
+
+}
+
+input[type="password"]:focus, input[type="text"]:focus {
+  box-shadow: 0 0 4px 1px rgba(55, 166, 155, 0.3);
+  outline: 0;
+}
+
+input[type="checkbox"]:checked + .toggle { background-position: 0 -16px }
+.forgot {
+  color:#6A5FDE;
+  display: inline-block;
+  float: right;
+ font-family: "Source Sans Pro";
+  
+  transition: color .4s;
+}
+.forgot:hover { color: #3b3b3b }
+input[type="submit"] {
+   
+  width:240px;
+  height:35px;
+  display:block;
+  font-family: "Source Sans Pro";
+  font-size:16px;
+  font-weight:bold;
+  color:#fff;
+  text-decoration:none;
+  text-transform:uppercase;
+  text-align:center;
+  text-shadow:1px 1px 0px #37a69b;
+  padding-top:6px;
+  margin: 29px 0 0 29px;
+  position:relative;
+  cursor:pointer;
+  border: none;  
+  background-color:#6A5FDE;;
+  background-image: linear-gradient(top,#3db0a6,#3111);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius:5px;
+  
+}
+
+
+
+
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+.login{
+    position: absolute;
+    right:6%;
+    width:31rem;
+    height:30rem;
+    bottom:3%;
+}
+.image{
+    width:600px;
+    height:500px;
+    position: absolute;
+    bottom:3%;
+    left:8%;
+}
+.back{
+    position: absolute;
+    left:12%;
+    top:15%;
+    width:150px;
+    height:70px;
+}
+input[type="password"], input[type="text"]{
+    position: relative;
+    left:20%;
+    top:20%;
+}
+input[type="submit"]{
+    position: relative;
+    left:20%;
+    top:20%;
+}
+.dsclogo{
+    width:120px;
+    left:38%;
+    top:30%;
+    position: relative;
+}
+.forgot{
+  position: relative;
+  right:20%;
+  top:34%;
+}
+h3{
+  position: relative;
+  left:24%;
+  top:23%;
+  text-decoration:underline ;
+  text-decoration-color: #6A5FDE;
+}
+}
+
+@media  screen and (max-width: 600px) {
+  .image{
+    visibility: hidden;
+   
+  }
+.back{
+  position: absolute;
+  left:170px;
+}
+  input[type="password"], input[type="text"]{
+    position: relative;
+    left:10%;
+    top:10%;
+}
+
+input[type="submit"]{
+    position: relative;
+    left:10%;
+    top:10%;
+    font-family: "Source Sans Pro";
+}
+
+  .login{
+    position: absolute;
+    left:70%;
+    width:25rem;
+    height:25rem;
+    top:15%;
+  }
+
+  .dsclogo{
+      width:9rem;
+      position: relative;
+      top:25%;
+      left:26%;
+  }
+ 
+  h3{
+    text-decoration: underline;
+    text-decoration-color: #6A5FDE;
+  position: relative;
+  left:15%;
+  top:15%;
+  font-family: "Source Sans Pro";
+  }
+  .forgot{
+    position: relative;
+    top:29%;
+    right:14%;
+  }
+    }
