@@ -2,7 +2,7 @@
 
 :root{
     --dark-blue :#6A5FDE;
-    --light-blue:#F1F0FF;
+    --light-blue:#F1F0FF;  
     --background-blue: #F2F5FA;
 }
 
@@ -62,13 +62,13 @@ body{
 }
 
 .wrapper .top_navbar .top_menu .logo{
-  color: var(--dark-blue);
+  color: var(--dark-blue);                       /* dashborad logo color*/
   font-size: 30px;
   font-weight: 700;
   letter-spacing:1px;
 }
 .wrapper .top_navbar .top_menu .logo>span{
-  color: #FCAA27;
+  color: #FCAA27;                             /* dashborad logo golden color*/
 }
 .wrapper .top_navbar .top_menu ul{
   display: flex;
@@ -82,14 +82,15 @@ body{
   height: 35px;
   line-height: 35px;
   text-align: center;
-  border: 1px solid var(--dark-blue);
+  /* border: 1px solid var(--dark-blue); */
   border-radius: 50%;
-  color: var(--dark-blue);
+  color: var(--dark-blue);                              /* fill color of social icons */
+  background-color: var(--background-blue);                   /*background color of socIAl icons in top nav bar */
 }
 
 .wrapper .top_navbar .top_menu ul li a:hover{
-  background: var(--dark-blue);
-  color: #fff;
+  background: var(--dark-blue);                     /*background color of socIAl icons in top nav bar on HOVER */
+  color: #fff;                                        /* color of social icons in top nav bar  on hover (white)*/
 }
 
 .wrapper .top_navbar .top_menu ul li a:hover i{
@@ -100,7 +101,7 @@ body{
   position: fixed;
   top: 65px;
   left: 0px;
-  background: var(--light-blue);
+  background: var(--light-blue);             /* sidenavbar color - light blue*/
   width: 200px;
   height: calc(100% - 70px);
   /* border-bottom-left-radius: 20px; */
@@ -127,7 +128,7 @@ body{
   left: 0;
   width: 3px;
   height: 100%;
-  background: #92a6e2;
+  background: var(--dark-blue);             
   display: none;
 }
 
@@ -142,7 +143,7 @@ body{
 
 .wrapper .sidebar ul li a:hover,
 .wrapper .sidebar ul li a.active{
-  background: #4360b5;
+  background: var(--dark-blue);          /* sidenav bar selected icon background color*/
   color: #fff;
 }
 
