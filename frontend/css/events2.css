@@ -1,0 +1,72 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+/* Design */
+#header{
+    position: fixed;
+    z-index: 1 !important;
+}
+:root{
+  --dark-blue :#6A5FDE;
+  --light-blue:#F1F0FF;
+  --background-blue: #F2F5FA;
+}
+
+.main-cont{
+    /* border: black 1px solid; */
+    margin-top: 10vh;
+    margin-left: 4vw !important;
+    position: relative;
+    /* z-index: -1; */
+}
+
+.bgimg{
+    width:100%;
+    height:35vh;
+    position:fixed;
+    filter: blur(2px)
+}
+.box{
+  max-width:70vw;
+  /* margin-right:20vw; */
+  position:inherit;
+  /* z-index: 10; */
+}
+.event-name{
+  width: 100%;
+  height: 22%;
+}
+.name{
+  font-family: Montserrat;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 7vh;
+}
+.event-cont{
+  /* border: 2px solid pink; */
+  width: 100%;
+  height: 70%;
+  border-radius: 10px;
+  background-color: white;
+  padding: 1em;
+}
+.head{
+  font-family: Montserrat;
+  color: #6A5FDE;
+  font-weight: 600;
+  font-size: 23px;
+}
+.abt{
+  font-family: Montserrat;
+  font-size: 15px;
+}
+#register-btn{
+  border-radius: 40px;
+  border: none;
+  margin-left: 0;
+  background: #13C533;
+  font-family: Montserrat;
+  color: white;
+  font-weight: 600;
+}
