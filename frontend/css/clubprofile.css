@@ -32,13 +32,14 @@ margin-top: 1em;
 background: white;
 border-radius: 9px;
 padding: 1em;
+word-wrap: break-word;
 }
 @media screen and (max-width: 480px) {
     .abt {
       order: 2;
     }
 
-    .cont{
+    #cont{
      order: 1;
     }
 }
