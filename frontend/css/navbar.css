@@ -2,7 +2,7 @@
 
 :root{
     --dark-blue :#6A5FDE;
-    --light-blue:#F1F0FF;  
+    --light-blue:#F1F0FF;
     --background-blue: #F2F5FA;
 }
 
@@ -90,13 +90,18 @@ body{
 
 .wrapper .top_navbar .top_menu ul li a:hover{
   background: var(--dark-blue);                     /*background color of socIAl icons in top nav bar on HOVER */
-  color: #fff;                                        /* color of social icons in top nav bar  on hover (white)*/
+  color: #fff;                                      /* color of social icons in top nav bar  on hover (white)*/
 }
 
 .wrapper .top_navbar .top_menu ul li a:hover i{
   color: #fff;
 }
-
+a:hover .icon svg{
+  fill: #ffffff;
+}
+svg{
+  fill: #6A5FDE;
+}
 .wrapper .sidebar{
   position: fixed;
   top: 65px;
@@ -128,7 +133,7 @@ body{
   left: 0;
   width: 3px;
   height: 100%;
-  background: var(--dark-blue);             
+  background: var(--dark-blue);
   display: none;
 }
 
@@ -142,13 +147,13 @@ body{
 }
 
 .wrapper .sidebar ul li a:hover,
-.wrapper .sidebar ul li a.active{
+.wrapper .sidebar ul li a:active{
   background: var(--dark-blue);          /* sidenav bar selected icon background color*/
   color: #fff;
 }
 
 .wrapper .sidebar ul li a:hover:before,
-.wrapper .sidebar ul li a.active:before{
+.wrapper .sidebar ul li a:active:before{
   display: block;
 }
 
@@ -173,7 +178,7 @@ body{
 }
 
 .wrapper.collapse .sidebar ul li a{
-  text-align: center; 
+  text-align: center;
 }
 
 .wrapper.collapse .sidebar ul li a span.icon{
@@ -222,5 +227,5 @@ body{
     height: 30px;
     line-height: 30px;
   }
-  
+
 }
