@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Responsive Side Navigation Bar</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/navbar.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".hamburger").click(function(){
+			   $(".wrapper").toggleClass("collapse");
+			});
+		});
+	</script>
+</head>
+<body>
+
+<div class="wrapper collapse">
+  <div class="top_navbar">
+    <div class="hamburger">
+       <div class="one"></div>
+       <div class="two"></div>
+       <div class="three"></div>
+    </div>
+    <div class="top_menu">
+      <div class="logo"><span>d</span>ash<span>b</span>oard.</div>
+      <ul class="soc">
+        <li><a href="#">
+          <i class="fab fa-instagram"></i></a></li>
+        <li><a href="#">
+          <i class="fab fa-twitter"></i>
+          </a></li>
+        <li><a href="#">
+          <i class="fab fa-github"></i>
+          </a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="sidebar">
+      <ul>
+        <li><a href="./index.html" id="index">
+          <span class="icon">
+						<svg id="ind" width="25" height="26" viewBox="0 0 35 36" xmlns="http://www.w3.org/2000/svg">
+						<path id="Path" d="M19.0622 1.67191C18.8585 1.43715 18.6068 1.24888 18.324 1.11986C18.0412 0.990838 17.7341 0.924072 17.4232 0.924072C17.1124 0.924072 16.8052 0.990838 16.5225 1.11986C16.2397 1.24888 15.9879 1.43715 15.7842 1.67191L0.000244141 19.8199H6.52824V32.9919C6.52811 33.2739 6.58356 33.5531 6.69141 33.8137C6.79926 34.0742 6.9574 34.311 7.15679 34.5103C7.35619 34.7097 7.59292 34.8679 7.85347 34.9757C8.11401 35.0836 8.39326 35.139 8.67525 35.1389H26.1692C26.4512 35.139 26.7305 35.0836 26.991 34.9757C27.2516 34.8679 27.4883 34.7097 27.6877 34.5103C27.8871 34.311 28.0452 34.0742 28.1531 33.8137C28.2609 33.5531 28.3164 33.2739 28.3162 32.9919V19.8199H34.8462L19.0622 1.67191ZM20.5002 33.9369H14.3442V27.3779C14.3442 26.9737 14.4239 26.5734 14.5785 26.2C14.7332 25.8266 14.9599 25.4872 15.2458 25.2014C15.5316 24.9156 15.8709 24.6889 16.2443 24.5342C16.6178 24.3795 17.018 24.2999 17.4222 24.2999C17.8265 24.2999 18.2267 24.3795 18.6001 24.5342C18.9736 24.6889 19.3129 24.9156 19.5987 25.2014C19.8845 25.4872 20.1113 25.8266 20.2659 26.2C20.4206 26.5734 20.5002 26.9737 20.5002 27.3779V33.9369Z"/>
+						</svg>
+					</span>
+          <span class="title">Home</span></a></li>
+        <li><a href="./events.html" id="events">
+          <span class="icon">
+						<svg width="25" height="26" viewBox="0 0 35 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g id="Group 292">
+						<path id="Path 15" d="M15.2787 18.7924H30.5571C30.5573 21.8142 29.6614 24.7682 27.9828 27.2809C26.3041 29.7936 23.918 31.752 21.1262 32.9086C18.3345 34.0651 15.2625 34.3679 12.2987 33.7785C9.33487 33.1891 6.61242 31.734 4.47558 29.5973C2.33875 27.4606 0.88351 24.7383 0.293901 21.7745C-0.295709 18.8108 0.00679342 15.7387 1.16315 12.9469C2.31951 10.1551 4.27778 7.76883 6.79033 6.08997C9.30288 4.4111 12.2568 3.51501 15.2787 3.51501V18.7924Z" fill="#B1ADDE"/>
+						<path id="Path 16" d="M18.7231 16.2036H34.0005C33.9999 12.1517 32.3902 8.26601 29.5254 5.40074C26.6605 2.53546 22.775 0.925223 18.7231 0.924072V16.2036Z" fill="#B1ADDE"/>
+						</g>
+						</svg>
+
+					</span>
+          <span class="title">Events</span>
+          </a></li>
+        <li><a href="./Signin.html" id="Signin">
+          <span class="icon">
+						<svg width="25" height="26" viewBox="0 0 35 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path id="Path 13" d="M19.7407 17.1317C21.3426 16.1059 22.5688 14.5885 23.2357 12.8071C23.9026 11.0256 23.9742 9.076 23.4398 7.25042C22.9053 5.42485 21.7936 3.82165 20.2713 2.6811C18.749 1.54055 16.898 0.924072 14.9958 0.924072C13.0936 0.924072 11.2426 1.54055 9.72032 2.6811C8.19799 3.82165 7.0863 5.42485 6.55185 7.25042C6.01741 9.076 6.089 11.0256 6.75589 12.8071C7.42278 14.5885 8.64906 16.1059 10.2509 17.1317C7.45198 17.3878 4.84949 18.6797 2.95334 20.7544C1.0572 22.8291 0.00405282 25.537 0.000244141 28.3477V37.4806L0.0209705 37.6287L0.653129 37.8241C5.60335 39.4196 10.7676 40.2523 15.9685 40.2935C20.5573 40.4402 25.1227 39.5812 29.3444 37.7767L29.9366 37.4806H30.0002V28.3477C29.9959 25.5357 28.9414 22.8268 27.0435 20.752C25.1456 18.6771 22.5411 17.386 19.7407 17.1317Z" fill="#B1ADDE"/>
+						</svg>
+					</span>
+          <span class="title">Sign In</span>
+          </a></li>
+        <li><a href="#" >
+          <span class="icon">
+						<svg width="25" height="26" viewBox="0 0 35 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path id="Path 14" d="M33.2538 24.5645L23.0357 4.6139C22.4664 3.50294 21.6017 2.57061 20.5366 1.91959C19.4715 1.26856 18.2474 0.924072 16.9991 0.924072C15.7508 0.924072 14.5267 1.26856 13.4616 1.91959C12.3965 2.57061 11.5317 3.50294 10.9625 4.6139L0.745523 24.5668C0.216148 25.6008 -0.0388078 26.7534 0.00508985 27.9142C0.0489875 29.075 0.390268 30.2051 0.996224 31.1961C1.60218 32.1872 2.4525 33.006 3.46572 33.5741C4.47893 34.1423 5.62108 34.4407 6.7827 34.4408H27.2178C28.3796 34.4407 29.522 34.1422 30.5353 33.5738C31.5487 33.0055 32.3991 32.1864 33.0049 31.195C33.6108 30.2037 33.9519 29.0733 33.9955 27.9122C34.039 26.7512 33.7837 25.5984 33.2538 24.5645ZM15.2435 9.99511H18.7846V15.1025C18.7846 16.6238 18.7301 18.0148 18.6212 19.2753C18.5122 20.5358 18.3741 21.809 18.2069 23.0949H15.8465C15.6639 21.8113 15.5174 20.5343 15.4069 19.2638C15.2964 17.9933 15.242 16.6065 15.2435 15.1036V9.99511ZM18.5671 28.781C18.1408 29.1707 17.5841 29.3867 17.0066 29.3867C16.429 29.3867 15.8724 29.1707 15.4461 28.781C15.2337 28.5811 15.0665 28.3382 14.9556 28.0685C14.8446 27.7988 14.7925 27.5085 14.8027 27.2171C14.7932 26.9237 14.8456 26.6315 14.9564 26.3597C15.0672 26.0879 15.2341 25.8424 15.4461 25.6393C15.8674 25.2399 16.4259 25.0172 17.0066 25.0172C17.5872 25.0172 18.1457 25.2399 18.5671 25.6393C18.7751 25.8446 18.9384 26.0908 19.0465 26.3624C19.1547 26.6339 19.2054 26.9249 19.1954 27.2171C19.2061 27.5072 19.1557 27.7964 19.0475 28.0659C18.9393 28.3353 18.7756 28.579 18.5671 28.781Z" fill="#B1ADDE"/>
+						</svg>
+					</span>
+          <span class="title">Sign Out</span>
+          </a></li>
+
+    </ul>
+  </div>
+
+
+</div>
+<ul class="footer">
+	<li><a href="#">
+	  <i class="fab fa-instagram"></i></a></li>
+	<li><a href="#">
+	  <i class="fab fa-twitter"></i>
+	  </a></li>
+	<li><a href="#">
+	  <i class="fab fa-github"></i>
+	  </a></li>
+  </ul>
+</body>
+</html>
+<script type="text/javascript">
+ function data() {
+	var string = window.location.href;
+	var pattern1 = /index/i
+	var pattern2 = /events/i
+	var pattern3 = /Signin/i
+	console.log(string.match(pattern1))
+	if (string.match(pattern1)){
+		document.getElementById('index').style.backgroundColor = "#6A5FDE"
+		document.getElementById('index').style.color = "#fff"
+		document.getElementById('ind').style.fill = "#fff"
+	}
+	else if (string.match(pattern2)){
+		document.getElementById('events').style.backgroundColor = "#6A5FDE"
+		document.getElementById('events').style.color = "#fff"
+	}
+	else if (string.match(pattern3)){
+		document.getElementById('Signin').style.backgroundColor = "#6A5FDE"
+		document.getElementById('Signin').style.color = "#fff"
+	}
+}
+data()
+</script>

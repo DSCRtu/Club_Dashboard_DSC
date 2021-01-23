@@ -1,0 +1,128 @@
+
+:root{
+    --dark-blue :#6A5FDE;
+    --light-blue:#F1F0FF;
+    --background-blue: #F2F5FA;
+}
+
+#header{
+    position: fixed;
+    z-index: 1 !important;
+
+}
+
+.main-cont{
+    /* border: black 1px solid; */
+    margin-top: 65px;
+    margin-left: 80px !important;
+    position: relative;
+    max-width: calc(100% - 80px);
+
+}
+
+.container .row{
+    /* border: black 1px solid; */
+    margin-left: 0px;
+    width: 100%;
+    position: relative;
+}
+.about-us{
+    margin: 30px 30px;
+    margin-bottom: 5px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 400px;
+font-size: 45px;
+line-height: 70px;
+color: #000000;
+}
+.about-us>span{
+    color: var(--dark-blue);
+    font-weight: 800px;
+    font-weight: bolder;
+}
+.about-txt{
+width: 80%;
+background-color: white;
+padding: 20px 25px;
+border-radius: 10px;
+box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+font-size: smaller;
+}
+
+.home-img{
+    margin: 20px auto;
+    width: 100%;
+}
+.home-img>img{
+    width: 85%;
+}
+
+/* club cards */
+
+.card-deck{
+    margin: 20px 20px;
+
+}
+.card{
+    margin: 10px 40px !important;
+    overflow: hidden;
+    background-color: var(--background-blue) !important;
+    border-radius: 5% !important;
+
+}
+.card-title{
+    font-size: small;
+    margin: 10px;
+}
+.card-img-top{
+    margin: 5px auto;
+    max-width: 50%;
+    padding: 15px;
+    border-radius: 50% !important;
+    border: 8px solid var(--dark-blue);
+    overflow: hidden;
+
+}
+.card-img-top>img{
+    border-radius: 50%;
+    border: 1px solid black;
+
+}
+.card-text{
+    text-align:center;
+    font-size: smaller;
+    margin: 2px;
+}
+.card-btn{
+    font-size: small;
+    text-transform: capitalize;
+    color: white;
+    width: 70%;
+    padding: 3px 3px;
+    margin: 0px 15%;
+    border: 0px;
+    background-color: var(--dark-blue);
+    letter-spacing: 1px;
+}
+
+@media (max-width:500px){
+
+.main-cont{
+    /* border: black 1px solid; */
+    margin-top: 65px;
+    margin-left: 60px !important;
+    position: relative;
+    max-width: calc(100% - 60px);
+
+}
+    .about-txt{
+        width:100%
+    }
+    .card-deck{
+        margin: 20px 0px;
+    }
+    .card{
+        margin: 25px 30px !important;
+    }
+}
