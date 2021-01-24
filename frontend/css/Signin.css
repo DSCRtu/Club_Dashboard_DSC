@@ -56,7 +56,7 @@ h1{
   padding-left: .5em
 }
 
-input[type="password"], input[type="text"] {
+input[type="password"], input[type="text"],input[type="email"],input[type="url"],input[type="month"],input[type="month"] {
   background:#F2F5FA;
   border: 2px solid #6A5FDE;
   border-radius: 9px;
@@ -67,12 +67,59 @@ input[type="password"], input[type="text"] {
   padding-left: 1em;
   width: 16em;
 }
-
-input[type="password"]:focus, input[type="text"]:focus {
+input[type="file"]{
+  background:#F2F5FA;
+  color:#6A5FDE;
+  height: 2.5em;
+  margin: 1em 0 0 0;
+  padding-left: 1em;
+  width: fit-content;
+}
+#styl{
+  background:#F2F5FA;
+  border: 2px solid #6A5FDE;
+  border-radius: 9px;
+  box-sizing: border-box;
+  color:#6A5FDE;
+  height: 2.5em;
+  margin: 1em 0 0 0;
+  padding-left: 1em;
+  width: 16em;
+}
+#styl:focus{
   box-shadow: 0 0 4px 1px rgba(55, 166, 155, 0.3);
   outline: 0;
 }
-
+#divider{
+  border-top: 2.5px solid #6A5FDE;
+}
+#memdivider{
+  border-top: 1px solid #6A5FDE;
+}
+.close:focus{
+  outline:none
+}
+textarea{
+  background:#F2F5FA;
+  border: 2px solid #6A5FDE;
+  border-radius: 9px;
+  color:#6A5FDE;
+  margin: 1em 0 0 0;
+  padding: 1em;
+  width: 18em;
+}
+textarea:focus{
+  box-shadow: 0 0 4px 1px rgba(55, 166, 155, 0.3);
+  outline: 0;
+}
+input[type="password"]:focus, input[type="text"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="month"]:focus {
+  box-shadow: 0 0 4px 1px rgba(55, 166, 155, 0.3);
+  outline: 0;
+}
+input[type="file"]:focus{
+  box-shadow: 0 0 4px 1px rgba(55, 166, 155, 0.3);
+  outline: 0;
+}
 .forgot {
   color:#F2F5FA;
  font-family: "Source Sans Pro";
@@ -116,9 +163,7 @@ input[type="submit"]:focus{
 .prop{
   left:15%
 }
-input[type="password"], input[type="text"] {
-  width: 12em;
-}
+
 .forgot{
   padding-left: 3em
 }
