@@ -14,8 +14,9 @@
 
 .main-cont{
     /* border: black 1px solid; */
-    margin-top: 10vh;
-    margin-left: 6vw !important;
+    margin-top: 75px;
+    margin-left: 80px !important;
+    max-width: calc(100%-80px) !important;
     position: relative;
     /* z-index: -1; */
 }
@@ -27,7 +28,8 @@
   width: 98%;
 }
 .row{
-  padding-left: 1em
+  padding-left: 1em;
+  width: 100%;
 }
 .img1{
   height: 4em;
